@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html; charset=UTF-8">
+        <title>{{ page_title }}</title>
+        <style>
+            body {
+                text-align: center;
+                font-family: Verdana, sans-serif;
+            }
+
+            table {
+                width: 100%;
+                table-layout: fixed;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 5px;
+                text-align: center; 
+            }
+
+            .tbl-1 {
+                float: left;
+                width: 48%;
+            }
+
+            .tbl-2 {
+                float: right;
+                width: 48%;
+            }
+            
+        </style>
+    </head>
+<body>
+
+    <h1>Аналитика по зарплатам и городам для профессии {{ job }}</h1>
+    <img src='file:///C:/Users/Dmitriy/Desktop/test6/graph.png'>
+    {{ first_table_data }}
+    <h2>Статистика по городам</h2>
+
+    <div class="city-stat">
+        <div class="tbl-1">
+            {{ second_table_data }}
+        </div>
+    
+        <div class="tbl-2">
+            {{ third_table_data }}
+        </div>
+    </div>
+
+</body>
+</html>
